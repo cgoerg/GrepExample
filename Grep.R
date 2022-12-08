@@ -1,3 +1,5 @@
+# Adding a new comment to the file
+
 drug <- c("","Bup","Nal","Bup,Nal")
 df <- data.frame(drug)
 
@@ -11,7 +13,7 @@ bup <- rep(0,4)  # initialize bup with zeros
 nal <- rep(0,4)  # initialize nal with zeros
 bup[b_drug_index] <- 1  # use index to set bup rowx to 1
 nal[n_drug_index] <- 2  # use index to set nal rows to 2
-dx <- bup + nal         # add indices: rows with only bup remain 1 (1+0), rows with only nal remain 2(0+2), rows with both bup and nal will be 3 (1+2)
+drug <- bup + nal         # add indices: rows with only bup remain 1 (1+0), rows with only nal remain 2(0+2), rows with both bup and nal will be 3 (1+2)
 
-dx
+drug
 
